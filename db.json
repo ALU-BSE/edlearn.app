@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "Nana",
+      "lastName": "Koramah",
+      "email": "n.abeasi@alustudent.com",
+      "password": "Password123!"
+    },
+    {
+      "id": "3b56",
+      "firstName": "Marvelous",
+      "lastName": "Nelson",
+      "email": "m.nelson@alustudent.com",
+      "password": "Marvelous.45"
+    }
+  ]
+}
