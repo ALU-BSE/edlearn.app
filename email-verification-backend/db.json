@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": 1742860643106,
+      "email": "benji.chukwu.20@gmail.com",
+      "password": "Marvelous.45",
+      "firstName": "Marvelous",
+      "lastName": "Nelson",
+      "createdAt": "2025-03-24T23:57:23.106Z"
+    },
+    {
+      "id": 1742862083378,
+      "firstName": "Nana",
+      "lastName": "Koramah",
+      "email": "n.abeasi@alustudent.com",
+      "password": "Password.123",
+      "confirmPassword": "Password.123",
+      "createdAt": "2025-03-25T00:21:23.378Z"
+    }
+  ]
+}
