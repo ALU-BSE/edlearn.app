@@ -5,16 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edlearn Sign in</title>
-     <!-- font awesome icons -->
-     <link rel="stylesheet" href=
-     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-     <!-- css stylesheet -->
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href=
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <!-- css stylesheet -->
     <link rel="stylesheet" href="dist/css/Signin.css">
     <link rel="icon" type="image/x-icon" href="images/EDLEARN-LOGO.png">
+
+    <script>
+        // Clear any existing auth data when loading login page
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.location.pathname.includes('Signin.html')) {
+                localStorage.removeItem('currentUser'); // Or clear() for everything
+            }
+        });
+    </script>
+
 </head>
 <body>
-    
+
     <div class="container" id="container">
         <div class="form-container sign-up-container">
             <form action="#">

@@ -1,0 +1,22 @@
+.teachers {
+    .search-tutor {
+        background: $white;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .teacher-card {
+        @extend .card;
+        text-align: center;
+    
+        img {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.user-profile {
+    .info-box {
+        background: $white;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    
+        .stat-item {
+            flex: 1 1 20rem;
+            background: $light-bg;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+        }
+    }
+}

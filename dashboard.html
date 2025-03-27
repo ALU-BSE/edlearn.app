@@ -10,47 +10,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
         <!-- custom css file link  -->
-        <link rel="stylesheet" href="css/style.css">
-
-        <script>
-            document.addEventListener('DOMContentLoaded', async () => {
-                const currentUser = JSON.parse(localStorage.getItem('currentUser') || 'null');
-                
-                if (!currentUser) {
-                    redirectToLogin();
-                    return;
-                }
-        
-                // Verify session with server
-                try {
-                    const response = await fetch(`http://localhost:3001/validate-session?user=${encodeURIComponent(JSON.stringify(currentUser))}`);
-                    const result = await response.json();
-                    
-                    if (!result.valid) {
-                        throw new Error('Invalid session');
-                    }
-                    
-                    document.getElementById('welcome-message').textContent = 
-                        `Welcome back, ${currentUser.firstName}!`;
-                } catch (error) {
-                    console.error('Session check failed:', error);
-                    localStorage.removeItem('currentUser');
-                    redirectToLogin();
-                }
-            });
-        
-            function redirectToLogin() {
-                alert('Please login to continue');
-                window.location.href = 'Signin.html';
-            }
-        
-            function logout() {
-                // Clear client-side storage
-                localStorage.removeItem('currentUser');
-                // Optional: Call server logout endpoint if you add one
-                window.location.href = 'Signin.html';
-            }
-        </script>
+        <link rel="stylesheet" href="dist/css/main.css">
+        <link rel="icon" type="image/x-icon" href="images/EDLEARN-LOGO.png">
 
     </head>
     <body>
@@ -72,6 +33,7 @@
             <div id="menu-btn" class="fas fa-bars"></div>
             <div id="search-btn" class="fas fa-search"></div>
             <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
         </div>
 
         <div class="profile">
@@ -282,7 +244,7 @@
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
-    <script src="js/formvalidation.js"></script>
+    <script src="formvalidation.js"></script>
 
     
     </body>

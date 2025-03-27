@@ -1,0 +1,10 @@
+.dashboard {
+    &-stats {
+        @include grid-layout(25rem);
+        margin-bottom: 3rem;
+    }
+
+    &-quick-links {
+        margin-top: 3rem;
+    }
+}

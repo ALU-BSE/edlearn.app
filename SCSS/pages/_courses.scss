@@ -1,0 +1,72 @@
+.courses {
+    .box-container {
+        @include grid-layout(30rem);
+        justify-content: center;
+        align-items: flex-start;
+    
+        .box {
+            border-radius: 0.5rem;
+            background-color: $white;
+            padding: 2rem;
+    
+            .tutor {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+    
+            img {
+                height: 5rem;
+                width: 5rem;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+    
+            h3 {
+                font-size: 1.8rem;
+                color: $black;
+                margin-bottom: 0.2rem;
+            }
+    
+            span {
+                font-size: 1.3rem;
+                color: $light-color;
+            }
+            }
+    
+            .thumb {
+            position: relative;
+    
+            span {
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+                border-radius: 0.5rem;
+                padding: 0.5rem 1.5rem;
+                background-color: rgba(0, 0, 0, 0.3);
+                color: $white;
+                font-size: 1.5rem;
+            }
+    
+            img {
+                width: 100%;
+                height: 20rem;
+                object-fit: cover;
+                border-radius: 0.5rem;
+            }
+            }
+    
+            .title {
+            font-size: 2rem;
+            color: $black;
+            padding-bottom: 0.5rem;
+            padding-top: 1rem;
+            }
+        }
+    }
+
+    .more-btn {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}

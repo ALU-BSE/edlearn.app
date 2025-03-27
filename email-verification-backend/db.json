@@ -16,6 +16,24 @@
       "password": "Password.123",
       "confirmPassword": "Password.123",
       "createdAt": "2025-03-25T00:21:23.378Z"
+    },
+    {
+      "id": 1742930239936,
+      "firstName": "Benjamin",
+      "lastName": "Nelson",
+      "email": "m.nelson@alustudent.com",
+      "password": "Benjamin.123",
+      "confirmPassword": "Benjamin.123",
+      "createdAt": "2025-03-25T19:17:19.936Z"
+    },
+    {
+      "id": 1742987106802,
+      "firstName": "Chika",
+      "lastName": "Nelson",
+      "email": "chicnel20@gmail.com",
+      "password": "Chicnel20@",
+      "confirmPassword": "Chicnel20@",
+      "createdAt": "2025-03-26T11:05:06.802Z"
     }
   ]
 }
