@@ -125,7 +125,7 @@ section {
 
 body {
   font-family: "Nunito", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   color: #000000;
 }
@@ -244,31 +244,31 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 0;
 }
 .header .flex .search-form {
-  width: 50rem;
+  width: 45%;
   border-radius: 0.5rem;
   background-color: #ecf0f1;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   display: flex;
   gap: 2rem;
 }
 .header .flex .search-form input {
   width: 100%;
   font-size: 1.8rem;
-  color: #000000;
+  color: #2c3e50;
   background: none;
 }
 .header .flex .search-form button {
   background: none;
   font-size: 2rem;
   cursor: pointer;
-  color: #000000;
+  color: #2c3e50;
 }
 .header .flex .search-form button:hover {
   color: #2c3e50;
 }
 .header .flex .icons div {
   font-size: 1.5rem;
-  color: #000000;
+  color: #2c3e50;
   background-color: #ecf0f1;
   border-radius: 5rem;
   height: 4.5rem;
