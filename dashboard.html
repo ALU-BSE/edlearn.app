@@ -50,191 +50,231 @@
 
     </header>   
 
-    <div class="side-bar">
+    <main>
 
-    <div id="close-btn">
-        <i class="fas fa-times"></i>
-    </div>
+        <div class="side-bar">
 
-    <div class="profile">
-        <img src="images/pic-5.jpg" class="image" alt="">
-        <h3 class="name">Nana Koramah</h3>
-        <p class="role">student</p>
-        <a href="profile.html" class="btn">view profile</a>
-    </div>
-
-    <nav class="navbar">
-        <a href="Dashboard.html"><i class="fas fa-home"></i><span>Dashboard</span></a>
-        <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
-        <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
-        <a href="contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
-    </nav>
-
-    </div>
-
-    <section class="home-grid">
-
-    <h1 class="heading">quick options</h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3 class="title">likes and comments</h3>
-            <p class="likes">total likes : <span>25</span></p>
-            <a href="#" class="inline-btn">view likes</a>
-            <p class="likes">total comments : <span>12</span></p>
-            <a href="#" class="inline-btn">view comments</a>
-            <p class="likes">saved playlists : <span>4</span></p>
-            <a href="#" class="inline-btn">view playlists</a>
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
         </div>
 
-        <div class="box">
-            <h3 class="title">top categories</h3>
-            <div class="flex">
-                <a href="#"><i class="fas fa-code"></i><span>development</span></a>
-                <a href="#"><i class="fas fa-chart-simple"></i><span>business</span></a>
-                <a href="#"><i class="fas fa-pen"></i><span>design</span></a>
-                <a href="#"><i class="fas fa-chart-line"></i><span>marketing</span></a>
-                <a href="#"><i class="fas fa-music"></i><span>music</span></a>
-                <a href="#"><i class="fas fa-camera"></i><span>photography</span></a>
-                <a href="#"><i class="fas fa-cog"></i><span>software</span></a>
-                <a href="#"><i class="fas fa-vial"></i><span>science</span></a>
+        <div class="profile">
+            <img src="images/pic-5.jpg" class="image" alt="">
+            <h3 class="name">Nana Koramah</h3>
+            <p class="role">student</p>
+            <a href="profile.html" class="btn">view profile</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="Dashboard.html"><i class="fas fa-home"></i><span>Dashboard</span></a>
+            <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+            <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
+            <a href="contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
+        </nav>
+
+        </div>
+
+        <section class="home-grid">
+
+        <h1 class="heading">quick options</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3 class="title">my learning progress</h3>
+                
+                <!-- Progress Overview -->
+                <div class="progress-overview">
+                    <div class="progress-metric">
+                        <p class="likes">active courses <span>3</span></p>
+                    </div>
+                    
+                    <div class="progress-metric">
+                        <p class="likes">completion rate <span>75%</span></p>
+                        <div class="progress-track thin">
+                            <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Current Courses -->
+                <div class="current-courses">
+                    <h3>in progress</h3>
+                    <div class="course-progress">
+                        <div class="course-info">
+                            <span class="course-name">Advanced HTML</span>
+                            <span class="course-percent">45%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-bar" style="width: 45%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-progress">
+                        <div class="course-info">
+                            <span class="course-name">Sass</span>
+                            <span class="course-percent">80%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Completed Courses -->
+                <div class="completed-courses">
+                    <h4>completed</h4>
+                    <ul class="course-list">
+                        <li>JavaScript Mastery <span class="badge">100%</span></li>
+                        <li>HTML/CSS Fundamentals <span class="badge">100%</span></li>
+                    </ul>
+                </div>
+            
+                <a href="courses.html" class="inline-btn">view my courses</a>
             </div>
-        </div>
 
-        <div class="box">
-            <h3 class="title">popular topics</h3>
-            <div class="flex">
-                <a href="#"><i class="fab fa-html5"></i><span>HTML</span></a>
-                <a href="#"><i class="fab fa-css3"></i><span>CSS</span></a>
-                <a href="#"><i class="fab fa-js"></i><span>javascript</span></a>
-                <a href="#"><i class="fab fa-react"></i><span>react</span></a>
-                <a href="#"><i class="fab fa-php"></i><span>PHP</span></a>
-                <a href="#"><i class="fab fa-bootstrap"></i><span>bootstrap</span></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <h3 class="title">become a tutor</h3>
-            <p class="tutor">Do you want to join our community of amazing tutors? Think you qualify?</p>
-            <a href="Getstarted.html" class="inline-btn">get started</a>
-        </div>
-
-    </div>
-
-    </section>
-
-
-
-    <section class="courses">
-
-    <h1 class="heading">our courses</h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <div class="tutor">
-                <img src="images/pic-3.jpg" alt="">
-                <div class="info">
-                <h3>Pelin</h3>
-                <span>21-10-2025</span>
+            <div class="box">
+                <h3 class="title">popular topics</h3>
+                <div class="flex">
+                    <a href="#"><i class="fab fa-html5"></i><span>HTML</span></a>
+                    <a href="#"><i class="fab fa-css3"></i><span>CSS</span></a>
+                    <a href="#"><i class="fab fa-js"></i><span>javascript</span></a>
+                    <a href="#"><i class="fab fa-react"></i><span>react</span></a>
+                    <a href="#"><i class="fab fa-php"></i><span>PHP</span></a>
+                    <a href="#"><i class="fab fa-bootstrap"></i><span>bootstrap</span></a>
                 </div>
             </div>
-            <div class="thumb">
-                <img src="images/thumb-1.png" alt="">
-                <span>10 videos</span>
-            </div>
-            <h3 class="title">complete HTML tutorial</h3>
-            <a href="playlist.html" class="inline-btn">view playlist</a>
+
         </div>
 
-        <div class="box">
-            <div class="tutor">
-                <img src="images/pic-3.jpg" alt="">
-                <div class="info">
-                <h3>Pelin</h3>
-                <span>21-10-2025</span>
+        </section>
+
+
+        <section class="courses">
+            <h1 class="heading">our courses</h1>
+        
+            <div class="box-container">
+        
+                <div class="box">
+                    <div class="tutor">
+                        <img src="images/pic-3.jpg" alt="">
+                        <div class="info">
+                            <h3>Pelin</h3>
+                            <span>21-10-2025</span>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <img src="images/thumb-1.png" alt="">
+                        <span>10 videos</span>
+                    </div>
+                    <h3 class="title">complete HTML tutorial</h3>
+                    <div class="course-actions">
+                        <a href="playlist.html" class="inline-btn">view playlist</a>
+                        <button class="enroll-btn">enroll now</button>
+                    </div>
                 </div>
-            </div>
-            <div class="thumb">
-                <img src="images/thumb-2.png" alt="">
-                <span>10 videos</span>
-            </div>
-            <h3 class="title">complete CSS tutorial</h3>
-            <a href="playlist.html" class="inline-btn">view playlist</a>
-        </div>
-
-        <div class="box">
-            <div class="tutor">
-                <img src="images/pic-3.jpg" alt="">
-                <div class="info">
-                <h3>Pelin</h3>
-                <span>21-10-2025</span>
+        
+                <div class="box">
+                    <div class="tutor">
+                        <img src="images/pic-3.jpg" alt="">
+                        <div class="info">
+                            <h3>Pelin</h3>
+                            <span>21-10-2025</span>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <img src="images/thumb-2.png" alt="">
+                        <span>10 videos</span>
+                    </div>
+                    <h3 class="title">complete CSS tutorial</h3>
+                    <div class="course-actions">
+                        <a href="playlist.html" class="inline-btn">view playlist</a>
+                        <button class="enroll-btn">enroll now</button>
+                    </div>
                 </div>
-            </div>
-            <div class="thumb">
-                <img src="images/thumb-3.png" alt="">
-                <span>10 videos</span>
-            </div>
-            <h3 class="title">complete JS tutorial</h3>
-            <a href="playlist.html" class="inline-btn">view playlist</a>
-        </div>
-
-        <div class="box">
-            <div class="tutor">
-                <img src="images/pic-3.jpg" alt="">
-                <div class="info">
-                <h3>Pelin</h3>
-                <span>21-10-2025</span>
+        
+                <div class="box">
+                    <div class="tutor">
+                        <img src="images/pic-3.jpg" alt="">
+                        <div class="info">
+                            <h3>Pelin</h3>
+                            <span>21-10-2025</span>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <img src="images/thumb-3.png" alt="">
+                        <span>10 videos</span>
+                    </div>
+                    <h3 class="title">complete JS tutorial</h3>
+                    <div class="course-actions">
+                        <a href="playlist.html" class="inline-btn">view playlist</a>
+                        <button class="enroll-btn">enroll now</button>
+                    </div>
                 </div>
-            </div>
-            <div class="thumb">
-                <img src="images/thumb-4.png" alt="">
-                <span>10 videos</span>
-            </div>
-            <h3 class="title">complete Boostrap tutorial</h3>
-            <a href="playlist.html" class="inline-btn">view playlist</a>
-        </div>
-
-        <div class="box">
-            <div class="tutor">
-                <img src="images/pic-6.jpg" alt="">
-                <div class="info">
-                <h3>Essien</h3>
-                <span>21-10-2025</span>
+        
+                <div class="box">
+                    <div class="tutor">
+                        <img src="images/pic-3.jpg" alt="">
+                        <div class="info">
+                            <h3>Pelin</h3>
+                            <span>21-10-2025</span>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <img src="images/thumb-4.png" alt="">
+                        <span>10 videos</span>
+                    </div>
+                    <h3 class="title">complete Boostrap tutorial</h3>
+                    <div class="course-actions">
+                        <a href="playlist.html" class="inline-btn">view playlist</a>
+                        <button class="enroll-btn">enroll now</button>
+                    </div>
                 </div>
-            </div>
-            <div class="thumb">
-                <img src="images/thumb-5.png" alt="">
-                <span>10 videos</span>
-            </div>
-            <h3 class="title">complete JQuery tutorial</h3>
-            <a href="playlist.html" class="inline-btn">view playlist</a>
-        </div>
-
-        <div class="box">
-            <div class="tutor">
-                <img src="images/pic-7.jpg" alt="">
-                <div class="info">
-                <h3>Samiratu</h3>
-                <span>21-10-2025</span>
+        
+                <div class="box">
+                    <div class="tutor">
+                        <img src="images/pic-6.jpg" alt="">
+                        <div class="info">
+                            <h3>Essien</h3>
+                            <span>21-10-2025</span>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <img src="images/thumb-5.png" alt="">
+                        <span>10 videos</span>
+                    </div>
+                    <h3 class="title">complete JQuery tutorial</h3>
+                    <div class="course-actions">
+                        <a href="playlist.html" class="inline-btn">view playlist</a>
+                        <button class="enroll-btn">enroll now</button>
+                    </div>
                 </div>
+        
+                <div class="box">
+                    <div class="tutor">
+                        <img src="images/pic-7.jpg" alt="">
+                        <div class="info">
+                            <h3>Samiratu</h3>
+                            <span>21-10-2025</span>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <img src="images/thumb-6.png" alt="">
+                        <span>10 videos</span>
+                    </div>
+                    <h3 class="title">complete SASS tutorial</h3>
+                    <div class="course-actions">
+                        <a href="playlist.html" class="inline-btn">view playlist</a>
+                        <button class="enroll-btn">enroll now</button>
+                    </div>
+                </div>
+        
+                <a href="courses.html" class="inline-btn">view your courses</a>
             </div>
-            <div class="thumb">
-                <img src="images/thumb-6.png" alt="">
-                <span>10 videos</span>
-            </div>
-            <h3 class="title">complete SASS tutorial</h3>
-            <a href="playlist.html" class="inline-btn">view playlist</a>
-        </div>
-
-    </div>
-
-    <div class="more-btn">
-        <a href="courses.html" class="inline-option-btn">view all courses</a>
-    </div>
-
-    </section>
+        </section>   
+        
+        
+    </main>    
 
     <footer class="footer">
 

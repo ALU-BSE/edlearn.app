@@ -603,6 +603,202 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 3rem;
 }
 
+.box {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.box .title {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+.box .likes {
+  font-size: 1.7rem;
+  color: #2c3e50;
+  margin: 1rem 0;
+}
+.box .likes span {
+  color: #2c3e50;
+  font-weight: 600;
+}
+.box .progress-track {
+  height: 2rem;
+  background: #ecf0f1;
+  border-radius: 5rem;
+  margin: 1.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.box .progress-track .progress-bar {
+  height: 100%;
+  background: #2c3e50;
+  border-radius: 5rem;
+  transition: width 0.4s ease;
+}
+.box .progress-track .progress-text {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.box .inline-btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background: #ecf0f1;
+  color: #000000;
+  cursor: pointer;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+.box .inline-btn:hover {
+  background: #2c3e50;
+  color: #fff;
+}
+
+.enroll-btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background: #ecf0f1;
+  color: #000000;
+  cursor: pointer;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.progress-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.progress-overview .progress-metric .progress-track.thin {
+  height: 1rem;
+  margin: 0.5rem 0 0;
+}
+
+.current-courses,
+.completed-courses {
+  margin: 2rem 0;
+}
+.current-courses h4,
+.completed-courses h4 {
+  font-size: 1.6rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.course-progress {
+  margin-bottom: 1.5rem;
+}
+.course-progress .course-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+.course-progress .course-info .course-name {
+  color: #000000;
+}
+.course-progress .course-info .course-percent {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.course-list {
+  list-style: none;
+  padding-left: 0;
+}
+.course-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #ecf0f1;
+  display: flex;
+  justify-content: space-between;
+}
+.course-list li:last-child {
+  border-bottom: none;
+}
+.course-list li .badge {
+  background: rgba(44, 62, 80, 0.1);
+  color: #2c3e50;
+  padding: 0.2rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding-left: 0;
+  }
+  .side-bar {
+    left: -30rem;
+    transition: 0.2s linear;
+  }
+  .side-bar #close-btn {
+    display: block;
+  }
+  .side-bar.active {
+    left: 0;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    border-right: 0;
+  }
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+  #search-btn {
+    display: inline-block;
+  }
+  .header .flex .search-form {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    border-top: var(--border);
+    border-bottom: var(--border);
+    background-color: var(--white);
+    border-radius: 0;
+    width: auto;
+    padding: 2rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.2s linear;
+  }
+  .header .flex .search-form.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .flex-btn {
+    gap: 0;
+    flex-flow: column;
+  }
+  .home-grid .box-container {
+    grid-template-columns: 1fr;
+  }
+  .about .row .image img {
+    height: 25rem;
+  }
+}
 .courses .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
