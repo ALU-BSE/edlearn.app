@@ -31,21 +31,21 @@ html {
     }
 }
 
-body {
+body{
     background-color: $light-bg;
     padding-left: 30rem;
+}
 
-    &.dark {
-        --light-color: #aaa;
-        --light-bg: #333;
-        --black: #fff;
-        --white: #222;
-        --border: 0.1rem solid rgba(255, 255, 255, 0.2);
-    }
+body.dark{
+    $light-bg: #333333;
+    $light-bg: #333;
+    $main-color: #fff;
+    $white: #222;
+    $border:.1rem solid rgba(255,255,255,.2);
+}
 
-    &.active {
-        padding-left: 0;
-    }
+body.active{
+    padding-left: 0;
 }
 
 section {

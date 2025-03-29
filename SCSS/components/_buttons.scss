@@ -27,9 +27,8 @@
     display: inline-block;
 }
 
-.btn,
 .inline-btn{
-    background-color: $main-color;
+    background-color: $orange;
 }
 
 .option-btn,
@@ -60,3 +59,8 @@
 #search-btn{
     display: none;
 }
+
+.btn{
+    background-color: $red;
+}
+

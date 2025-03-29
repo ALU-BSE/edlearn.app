@@ -1,3 +1,47 @@
+.contact .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact .row .image{
+    flex: 1 1 50rem;
+}
+
+.contact .row .image img{
+    width: 100%;
+}
+
+.contact .row form{
+    flex: 1 1 30rem;
+    background-color: $white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    color: $main-color;
+    font-size: 2.5rem;
+}
+
+.contact .row form .box{
+    width: 100%;
+    border-radius: .5rem;
+    background-color: $dark-bg;
+    margin: 1rem 0;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: $main-color;
+}
+
+.contact .row form textarea{
+    height: 20rem;
+    resize: none;
+}
+
 @media (max-width:1200px){
 
     body{
@@ -10,7 +54,7 @@
     }
 
     .side-bar #close-btn{
-    display: block;
+        display: block;
     }
 
     .side-bar.active{
@@ -49,7 +93,7 @@
     }
 
     .header .flex .search-form.active{
-        clip-path: polygon(0 1, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
 }

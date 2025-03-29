@@ -408,6 +408,7 @@ section{
    color:var(--main-color);
 }
 
+/*No need for an about*/
 .about .row{
    display: flex;
    align-items: center;
