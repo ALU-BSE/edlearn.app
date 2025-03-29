@@ -64,3 +64,18 @@
     background-color: $red;
 }
 
+.enroll-btn {
+    padding: 1rem 1.5rem;
+    background: $red;
+    color: $white;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    border-radius: .5rem;
+    margin: 2rem;
+}
+
+.enroll-btn:hover {
+    background: $black;
+    color: $white;
+    cursor: pointer;
+}
