@@ -65,9 +65,9 @@
 
    <nav class="navbar">
       <a href="dashboard.html"><i class="fas fa-home"></i><span>Dashboard</span></a>
-      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
-      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
-      <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
    </nav>
 
 </div>
@@ -82,24 +82,25 @@
          <form action="" method="post" class="save-playlist">
             <button type="submit"><i class="far fa-bookmark"></i> <span>save playlist</span></button>
          </form>
-   
+
          <div class="thumb">
-            <img src="images/thumb-1.png" alt="">
-            <span>10 videos</span>
+            <img src="" alt="" id="playlist-thumbnail">
+            <span id="playlist-video-count"></span>
          </div>
       </div>
+
       <div class="column">
          <div class="tutor">
-            <img src="images/pic-1.jpg" alt="">
+            <img src="" alt="" id="playlist-tutor-image">
             <div>
-               <h3>William Brown</h3>
-               <span>21-10-2022</span>
+               <h3 id="playlist-tutor-name"></h3>
+               <span id="playlist-date"></span>
             </div>
          </div>
-   
+
          <div class="details">
-            <h3>complete HTML tutorial</h3>
-            <p> This is a complete html tutorial</p>
+            <h3 id="playlist-title"></h3>
+            <p id="playlist-description"></p>
             <a href="teacher_profile.html" class="inline-btn">view profile</a>
          </div>
       </div>
@@ -111,44 +112,7 @@
 
    <h1 class="heading">playlist videos</h1>
 
-   <div class="box-container">
-
-      <a class="box" href="watch-video.html">
-         <i class="fas fa-play"></i>
-         <img src="images/post-1-1.png" alt="">
-         <h3>complete HTML tutorial (part 01)</h3>
-      </a>
-
-      <a class="box" href="watch-video.html">
-         <i class="fas fa-play"></i>
-         <img src="images/post-1-2.png" alt="">
-         <h3>complete HTML tutorial (part 02)</h3>
-      </a>
-
-      <a class="box" href="watch-video.html">
-         <i class="fas fa-play"></i>
-         <img src="images/post-1-3.png" alt="">
-         <h3>complete HTML tutorial (part 03)</h3>
-      </a>
-
-      <a class="box" href="watch-video.html">
-         <i class="fas fa-play"></i>
-         <img src="images/post-1-4.png" alt="">
-         <h3>complete HTML tutorial (part 04)</h3>
-      </a>
-
-      <a class="box" href="watch-video.html">
-         <i class="fas fa-play"></i>
-         <img src="images/post-1-5.png" alt="">
-         <h3>complete HTML tutorial (part 05)</h3>
-      </a>
-
-      <a class="box" href="watch-video.html">
-         <i class="fas fa-play"></i>
-         <img src="images/post-1-6.png" alt="">
-         <h3>complete HTML tutorial (part 06)</h3>
-      </a>
-
+   <div class="box-container" id="playlist-videos-container">
    </div>
 
 </section>
@@ -174,6 +138,8 @@
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
 <script src="js/auth_handler.js"></script>
+<script src="js/enrollment.js"></script>
+<script src="js/playlist.js"></script>
 
    
 </body>

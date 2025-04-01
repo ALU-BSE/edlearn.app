@@ -163,7 +163,7 @@ function createEnrolledCourseCard(course) {
         <h3 class="title">${course.title}</h3>
         <div class="course-actions">
             <a href="playlist.html?courseId=${course.id}" class="inline-btn">view playlist</a>
-            <button class="deenroll-btn" data-course-id="${course.id}">deenroll</button>
+            <button class="deenroll-btn" data-course-id="${course.id}">unenroll</button>
         </div>
     `;
 
