@@ -124,5 +124,15 @@
       "videos": 10,
       "date": "21-10-2025"
     }
+  ],
+  "comments": [
+    {
+      "id": "7517",
+      "videoId": "vid-0",
+      "userId": "1742860643106",
+      "text": "bcfbeberv",
+      "createdAt": "2025-04-01T12:46:11.219Z",
+      "courseId": "1"
+    }
   ]
 }

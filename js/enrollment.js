@@ -20,9 +20,9 @@ async function fetchData(url) {
 }
 
 // Function to update data in the mock API
-async function updateData(url, data) {
+async function updateData(url, id, data) {
     try {
-        const response = await fetch(url, {
+        const response = await fetch(`${url}/${id}`, {
             method: 'PUT', // Or PATCH, depending on your needs
             headers: {
                 'Content-Type': 'application/json',
@@ -34,8 +34,44 @@ async function updateData(url, data) {
         }
         return await response.json();
     } catch (error) {
-        console.error('Updating data failed:', error);
+        console.error(`Error updating data at ${url}/${id}:`, error);
         return null; // Or handle the error appropriately
+    }
+}
+
+// Function to add data to the mock API (POST request)
+async function addData(url, data) {
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        });
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error('Error adding data:', error);
+        throw error;
+    }
+}
+
+// Function to delete data from the mock API (DELETE request)
+async function deleteData(url, id) {
+    try {
+        const response = await fetch(`${url}/${id}`, {
+            method: 'DELETE',
+        });
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return await response.json(); // Or just return true/void if no body
+    } catch (error) {
+        console.error(`Error deleting data at ${url}/${id}:`, error);
+        throw error;
     }
 }
 
@@ -163,7 +199,7 @@ function createEnrolledCourseCard(course) {
         <h3 class="title">${course.title}</h3>
         <div class="course-actions">
             <a href="playlist.html?courseId=${course.id}" class="inline-btn">view playlist</a>
-            <button class="deenroll-btn" data-course-id="${course.id}">unenroll</button>
+            <button class="unenroll-btn" data-course-id="${course.id}">unenroll</button>
         </div>
     `;
 
@@ -277,7 +313,7 @@ async function displayEnrolledCourses() {
             container.appendChild(card);
 
             // Add event listener for the deenroll button
-            const deenrollButton = card.querySelector('.deenroll-btn');
+            const deenrollButton = card.querySelector('.unenroll-btn');
             if (deenrollButton) {
                 deenrollButton.addEventListener('click', handleDeenrollClick);
             }

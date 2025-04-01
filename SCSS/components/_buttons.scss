@@ -1,8 +1,8 @@
 .inline-btn,
 .inline-option-btn,
 .inline-delete-btn,
-.btn,
-.delete-btn,
+.btn, .delete-comment-btn, .edit-comment-btn, .save-edit-btn,
+.delete-btn, .cancel-edit-btn,
 .option-btn{
     border-radius: .5rem;
     color: $white;
@@ -22,7 +22,7 @@
 }
 
 .inline-btn,
-.inline-option-btn,
+.inline-option-btn, .edit-comment-btn, .delete-comment-btn, .save-edit-btn, .cancel-edit-btn,
 .inline-delete-btn{
     display: inline-block;
 }
@@ -32,19 +32,19 @@
 }
 
 .option-btn,
-.inline-option-btn{
+.inline-option-btn, .edit-comment-btn{
     background-color: $orange;
 }
 
 .delete-btn,
-.inline-delete-btn{
+.inline-delete-btn, .delete-comment-btn, .save-edit-btn{
     background-color: $red;
 }
 
 .inline-btn:hover,
 .inline-option-btn:hover,
-.inline-delete-btn:hover,
-.btn:hover,
+.inline-delete-btn:hover, .edit-comment-btn:hover, .save-edit-btn:hover,
+.btn:hover, .delete-comment-btn:hover, .cancel-edit-btn:hover, 
 .delete-btn:hover,
 .option-btn:hover{
     background-color: $black;
@@ -60,12 +60,18 @@
     display: none;
 }
 
-.btn{
+.btn, .enroll-btn{
     background-color: $red;
 }
 
-.enroll-btn, .deenroll-btn{
+.unenroll-btn, .delete-comment-btn, 
+.cancel-edit-btn{
+    background: $wine;
+}
+
+.enroll-btn, .unenroll-btn {
     padding: 1rem 1.5rem;
+    background: $red;
     color: $white;
     font-size: 1.8rem;
     text-transform: capitalize;
@@ -73,19 +79,7 @@
     margin: 2rem;
 }
 
-.deenroll-btn{
-    font-size: 2rem;
-}
-
-.enroll-btn{
-    background: $red;
-}
-
-.deenroll-btn{
-    background: $wine;
-}
-
-.enroll-btn:hover, .deenroll-btn:hover {
+.enroll-btn:hover, .unenroll-btn:hover {
     background: $black;
     color: $white;
     cursor: pointer;

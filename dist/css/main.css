@@ -157,8 +157,8 @@ h1, h2, h3, h4, h5, h6 {
 .inline-btn,
 .inline-option-btn,
 .inline-delete-btn,
-.btn,
-.delete-btn,
+.btn, .delete-comment-btn, .edit-comment-btn, .save-edit-btn,
+.delete-btn, .cancel-edit-btn,
 .option-btn {
   border-radius: 0.5rem;
   color: #fff;
@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .inline-btn,
-.inline-option-btn,
+.inline-option-btn, .edit-comment-btn, .delete-comment-btn, .save-edit-btn, .cancel-edit-btn,
 .inline-delete-btn {
   display: inline-block;
 }
@@ -188,19 +188,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .option-btn,
-.inline-option-btn {
+.inline-option-btn, .edit-comment-btn {
   background-color: #f19a3e;
 }
 
 .delete-btn,
-.inline-delete-btn {
+.inline-delete-btn, .delete-comment-btn, .save-edit-btn {
   background-color: #809848;
 }
 
 .inline-btn:hover,
 .inline-option-btn:hover,
-.inline-delete-btn:hover,
-.btn:hover,
+.inline-delete-btn:hover, .edit-comment-btn:hover, .save-edit-btn:hover,
+.btn:hover, .delete-comment-btn:hover, .cancel-edit-btn:hover,
 .delete-btn:hover,
 .option-btn:hover {
   background-color: #000000;
@@ -216,12 +216,18 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-.btn {
+.btn, .enroll-btn {
   background-color: #809848;
 }
 
-.enroll-btn, .deenroll-btn {
+.unenroll-btn, .delete-comment-btn,
+.cancel-edit-btn {
+  background: #e74c3c;
+}
+
+.enroll-btn, .unenroll-btn {
   padding: 1rem 1.5rem;
+  background: #809848;
   color: #fff;
   font-size: 1.8rem;
   text-transform: capitalize;
@@ -229,19 +235,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2rem;
 }
 
-.deenroll-btn {
-  font-size: 2rem;
-}
-
-.enroll-btn {
-  background: #809848;
-}
-
-.deenroll-btn {
-  background: #e74c3c;
-}
-
-.enroll-btn:hover, .deenroll-btn:hover {
+.enroll-btn:hover, .unenroll-btn:hover {
   background: #000000;
   color: #fff;
   cursor: pointer;
