@@ -21,7 +21,7 @@
     <section class="flex">
 
         <div class="logo">
-            <a href="Dashboard.html"><img src="images/Logo.png" alt="Edlearn Logo"></a>
+            <a href="dashboard.html"><img src="images/Logo.png" alt="Edlearn Logo"></a>
         </div>
 
         <form action="courses.html" method="get" class="search-form">
@@ -66,7 +66,7 @@
         </div>
 
         <nav class="navbar">
-            <a href="Dashboard.html"><i class="fas fa-home"></i><span>Dashboard</span></a>
+            <a href="dashboard.html"><i class="fas fa-home"></i><span>Dashboard</span></a>
             <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
             <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
             <a href="contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
@@ -86,13 +86,13 @@
                 <!-- Progress Overview -->
                 <div class="progress-overview">
                     <div class="progress-metric">
-                        <p class="likes">active courses <span>3</span></p>
+                        <p class="likes">active courses <span id="active-courses-count" >0</span></p>
                     </div>
                     
                     <div class="progress-metric">
-                        <p class="likes">completion rate <span>75%</span></p>
+                        <p class="likes">completion rate <span>0%</span></p>
                         <div class="progress-track thin">
-                            <div class="progress-bar" style="width: 75%"></div>
+                            <div class="progress-bar" style="width: 0%"></div>
                         </div>
                     </div>
                 </div>
@@ -100,33 +100,14 @@
                 <!-- Current Courses -->
                 <div class="current-courses">
                     <h3>in progress</h3>
-                    <div class="course-progress">
-                        <div class="course-info">
-                            <span class="course-name">Advanced HTML</span>
-                            <span class="course-percent">45%</span>
-                        </div>
-                        <div class="progress-track">
-                            <div class="progress-bar" style="width: 45%"></div>
-                        </div>
-                    </div>
                     
-                    <div class="course-progress">
-                        <div class="course-info">
-                            <span class="course-name">Sass</span>
-                            <span class="course-percent">80%</span>
-                        </div>
-                        <div class="progress-track">
-                            <div class="progress-bar" style="width: 80%"></div>
-                        </div>
-                    </div>
                 </div>
             
                 <!-- Completed Courses -->
                 <div class="completed-courses">
                     <h4>completed</h4>
                     <ul class="course-list">
-                        <li>JavaScript Mastery <span class="badge">100%</span></li>
-                        <li>HTML/CSS Fundamentals <span class="badge">100%</span></li>
+                        
                     </ul>
                 </div>
             
@@ -154,120 +135,7 @@
             <h1 class="heading">our courses</h1>
         
             <div class="box-container">
-        
-                <div class="box">
-                    <div class="tutor">
-                        <img src="images/pic-3.jpg" alt="">
-                        <div class="info">
-                            <h3>Pelin</h3>
-                            <span>21-10-2025</span>
-                        </div>
-                    </div>
-                    <div class="thumb">
-                        <img src="images/thumb-1.png" alt="">
-                        <span>10 videos</span>
-                    </div>
-                    <h3 class="title">complete HTML tutorial</h3>
-                    <div class="course-actions">
-                        <a href="playlist.html" class="inline-btn">view playlist</a>
-                        <button class="enroll-btn">enroll now</button>
-                    </div>
-                </div>
-        
-                <div class="box">
-                    <div class="tutor">
-                        <img src="images/pic-3.jpg" alt="">
-                        <div class="info">
-                            <h3>Pelin</h3>
-                            <span>21-10-2025</span>
-                        </div>
-                    </div>
-                    <div class="thumb">
-                        <img src="images/thumb-2.png" alt="">
-                        <span>10 videos</span>
-                    </div>
-                    <h3 class="title">complete CSS tutorial</h3>
-                    <div class="course-actions">
-                        <a href="playlist.html" class="inline-btn">view playlist</a>
-                        <button class="enroll-btn">enroll now</button>
-                    </div>
-                </div>
-        
-                <div class="box">
-                    <div class="tutor">
-                        <img src="images/pic-3.jpg" alt="">
-                        <div class="info">
-                            <h3>Pelin</h3>
-                            <span>21-10-2025</span>
-                        </div>
-                    </div>
-                    <div class="thumb">
-                        <img src="images/thumb-3.png" alt="">
-                        <span>10 videos</span>
-                    </div>
-                    <h3 class="title">complete JS tutorial</h3>
-                    <div class="course-actions">
-                        <a href="playlist.html" class="inline-btn">view playlist</a>
-                        <button class="enroll-btn">enroll now</button>
-                    </div>
-                </div>
-        
-                <div class="box">
-                    <div class="tutor">
-                        <img src="images/pic-3.jpg" alt="">
-                        <div class="info">
-                            <h3>Pelin</h3>
-                            <span>21-10-2025</span>
-                        </div>
-                    </div>
-                    <div class="thumb">
-                        <img src="images/thumb-4.png" alt="">
-                        <span>10 videos</span>
-                    </div>
-                    <h3 class="title">complete Boostrap tutorial</h3>
-                    <div class="course-actions">
-                        <a href="playlist.html" class="inline-btn">view playlist</a>
-                        <button class="enroll-btn">enroll now</button>
-                    </div>
-                </div>
-        
-                <div class="box">
-                    <div class="tutor">
-                        <img src="images/pic-6.jpg" alt="">
-                        <div class="info">
-                            <h3>Essien</h3>
-                            <span>21-10-2025</span>
-                        </div>
-                    </div>
-                    <div class="thumb">
-                        <img src="images/thumb-5.png" alt="">
-                        <span>10 videos</span>
-                    </div>
-                    <h3 class="title">complete JQuery tutorial</h3>
-                    <div class="course-actions">
-                        <a href="playlist.html" class="inline-btn">view playlist</a>
-                        <button class="enroll-btn">enroll now</button>
-                    </div>
-                </div>
-        
-                <div class="box">
-                    <div class="tutor">
-                        <img src="images/pic-7.jpg" alt="">
-                        <div class="info">
-                            <h3>Samiratu</h3>
-                            <span>21-10-2025</span>
-                        </div>
-                    </div>
-                    <div class="thumb">
-                        <img src="images/thumb-6.png" alt="">
-                        <span>10 videos</span>
-                    </div>
-                    <h3 class="title">complete SASS tutorial</h3>
-                    <div class="course-actions">
-                        <a href="playlist.html" class="inline-btn">view playlist</a>
-                        <button class="enroll-btn">enroll now</button>
-                    </div>
-                </div>
+                <!--Dynamicaaly Populated-->
                 
             </div>
         </section>   
@@ -284,6 +152,8 @@
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
     <script src="formvalidation.js"></script>
+    <script src="js/auth_handler.js"></script>
+    <script src="js/enrollment.js"></script>
 
     
     </body>

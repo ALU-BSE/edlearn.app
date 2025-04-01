@@ -220,9 +220,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #809848;
 }
 
-.enroll-btn {
+.enroll-btn, .deenroll-btn {
   padding: 1rem 1.5rem;
-  background: #809848;
   color: #fff;
   font-size: 1.8rem;
   text-transform: capitalize;
@@ -230,7 +229,19 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2rem;
 }
 
-.enroll-btn:hover {
+.deenroll-btn {
+  font-size: 2rem;
+}
+
+.enroll-btn {
+  background: #809848;
+}
+
+.deenroll-btn {
+  background: #e74c3c;
+}
+
+.enroll-btn:hover, .deenroll-btn:hover {
   background: #000000;
   color: #fff;
   cursor: pointer;
@@ -419,6 +430,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .side-bar.active {
   left: -30rem;
+}
+
+.side-bar .navbar a {
+  transition: all 0.3s ease;
+}
+.side-bar .navbar a.active {
+  background: #fff;
+  color: #2c3e50;
+}
+.side-bar .navbar a.active i, .side-bar .navbar a.active span {
+  color: #2c3e50;
 }
 
 .card {

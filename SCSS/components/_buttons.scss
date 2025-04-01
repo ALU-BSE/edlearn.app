@@ -64,9 +64,8 @@
     background-color: $red;
 }
 
-.enroll-btn {
+.enroll-btn, .deenroll-btn{
     padding: 1rem 1.5rem;
-    background: $red;
     color: $white;
     font-size: 1.8rem;
     text-transform: capitalize;
@@ -74,7 +73,19 @@
     margin: 2rem;
 }
 
-.enroll-btn:hover {
+.deenroll-btn{
+    font-size: 2rem;
+}
+
+.enroll-btn{
+    background: $red;
+}
+
+.deenroll-btn{
+    background: $wine;
+}
+
+.enroll-btn:hover, .deenroll-btn:hover {
     background: $black;
     color: $white;
     cursor: pointer;

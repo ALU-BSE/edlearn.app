@@ -84,3 +84,22 @@
 .side-bar.active{
     left: -30rem;
 }
+
+.side-bar{
+        // components/_sidebar.scss
+    // In your existing _sidebar.scss or _navigation.scss
+    .navbar {
+        a {
+        transition: all 0.3s ease;
+        
+            &.active {
+                background: $white;
+                color: $main-color;
+                
+                i, span {
+                color: $main-color;
+                }
+            }
+        }
+    }
+}

@@ -168,3 +168,28 @@ app.post('/validate-session', (req, res) => {
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
 });
+
+// ✅ New Enrollment Endpoint
+app.post('/enroll', (req, res) => {
+    const db = readDb();
+    const { userId, courseId, courseTitle } = req.body;
+
+    const user = db.users.find(u => u.id === Number(userId));
+    if (!user) return res.status(404).json({ error: 'User not found' });
+
+    // Initialize progress array if missing
+    if (!user.progress) user.progress = [];
+
+    // Add course if not already enrolled
+    if (!user.progress.some(c => c.courseId === courseId)) {
+        user.progress.push({
+            courseId,
+            title: courseTitle,
+            percentage: 0,
+            lastAccessed: new Date().toISOString()
+        });
+        writeDb(db);
+    }
+
+    res.json({ success: true });
+});

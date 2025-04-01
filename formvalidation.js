@@ -10,6 +10,17 @@ const confirmPasswordMsg = document.getElementById('confirm-password-msg');
 // VALIDATION FUNCTIONS
 // ======================
 
+//NormalizeUserData//
+function normalizeUserData(user) {
+    return {
+        id: user.id,
+        email: user.email,
+        firstName: user.firstName,
+        lastName: user.lastName,
+        // Add any other fields you want to store
+    };
+}
+
 // 1. Email Format Validation (UNCHANGED)
 function validateEmailFormat(email) {
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -224,17 +235,14 @@ document.getElementById('emailForm')?.addEventListener('submit', async (e) => {
         const loginResult = await loginResponse.json();
         
         if (loginResult.success && loginResult.user) {
-            // 🔥 Critical Fix: Ensure ID is numeric
-            const userWithNumericId = {
-                ...loginResult.user,
-                id: Number(loginResult.user.id)
-            };
+            // Normalize and store user data
+            const normalizedUser = normalizeUserData(loginResult.user);
+            localStorage.setItem("currentUser", JSON.stringify(normalizedUser));
             
-            // Save user data and redirect
-            localStorage.setItem("currentUser", JSON.stringify(userWithNumericId));
-            console.log("Stored User:", userWithNumericId); // Debug log
+            console.log("Stored User:", normalizedUser); // Debug
             
-            window.location.href = "dashboard.html";
+            // Redirect with cache-busting to ensure fresh data load
+            window.location.href = `dashboard.html?t=${Date.now()}`;
         } else {
             throw new Error(loginResult.error || "Login failed");
         }
