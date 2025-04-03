@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .delete-btn,
-.inline-delete-btn, .delete-comment-btn, .save-edit-btn {
+.inline-delete-btn, .save-edit-btn {
   background-color: #809848;
 }
 
@@ -220,14 +220,17 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #809848;
 }
 
-.unenroll-btn, .delete-comment-btn,
+.delete-comment-btn,
 .cancel-edit-btn {
+  background: #e74c3c;
+}
+
+.unenroll-btn {
   background: #e74c3c;
 }
 
 .enroll-btn, .unenroll-btn {
   padding: 1rem 1.5rem;
-  background: #809848;
   color: #fff;
   font-size: 1.8rem;
   text-transform: capitalize;
@@ -730,6 +733,7 @@ h1, h2, h3, h4, h5, h6 {
 .current-courses,
 .completed-courses {
   margin: 2rem 0;
+  text-transform: capitalize;
 }
 .current-courses h4,
 .completed-courses h4 {
@@ -776,6 +780,68 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+/* Progress styles */
+.current-courses {
+  margin: 1.5rem 0;
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  background: #f9f9f9;
+  border-radius: 0.5rem;
+}
+
+.progress-item h4 {
+  font-size: 1.5rem;
+  color: var(--black);
+  width: 60%;
+}
+
+.progress-track {
+  width: 35%;
+  height: 0.8rem;
+  background: #eee;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.progress-track .progress-bar {
+  height: 100%;
+  background: var(--main-color);
+  transition: width 0.3s ease;
+}
+
+.completed-courses .course-list {
+  margin-top: 1rem;
+}
+
+.completed-courses .course-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  background: #f9f9f9;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.completed-courses .course-list li a {
+  color: var(--black);
+  font-size: 1.5rem;
+}
+
+.completed-badge {
+  background: var(--main-color);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 1200px) {

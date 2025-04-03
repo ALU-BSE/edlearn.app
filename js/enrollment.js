@@ -62,7 +62,7 @@ async function addData(url, data) {
 // Function to delete data from the mock API (DELETE request)
 async function deleteData(url, id) {
     try {
-        const response = await fetch(`${url}/${id}`, {
+        const response = await fetch(`<span class="math-inline">\{url\}/</span>{id}`, {
             method: 'DELETE',
         });
         if (!response.ok) {
@@ -70,7 +70,7 @@ async function deleteData(url, id) {
         }
         return await response.json(); // Or just return true/void if no body
     } catch (error) {
-        console.error(`Error deleting data at ${url}/${id}:`, error);
+        console.error(`Error deleting data at <span class="math-inline">\{url\}/</span>{id}:`, error);
         throw error;
     }
 }
@@ -153,7 +153,7 @@ async function handleDashboardEnrollClick(event) {
 
     // Update the user's enrolled courses on the server
     user.enrolledCourses.push(courseId);
-    const updatedUser = await updateData(`http://localhost:3000/users/${user.id}`, user);
+    const updatedUser = await updateData(`http://localhost:3000/users`, user.id, user);
 
     if (updatedUser) {
         alert('Enrollment successful!');
@@ -207,7 +207,7 @@ function createEnrolledCourseCard(course) {
 }
 
 async function handleDeenrollClick(event) {
-    if (!event.target.classList.contains('deenroll-btn')) return;
+    if (!event.target.classList.contains('unenroll-btn')) return; // Corrected class name
 
     const courseId = parseInt(event.target.dataset.courseId);
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
@@ -235,7 +235,7 @@ async function handleDeenrollClick(event) {
 
     user.enrolledCourses.splice(index, 1);
 
-    const updatedUser = await updateData(`http://localhost:3000/users/${userId}`, user);
+    const updatedUser = await updateData(`http://localhost:3000/users`, userId, user); // Corrected updateData call
 
     if (updatedUser) {
         alert('Successfully de-enrolled from the course.');

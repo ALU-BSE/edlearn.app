@@ -24,7 +24,7 @@
             <a href="dashboard.html"><img src="images/Logo.png" alt="Edlearn Logo"></a>
         </div>
 
-        <form action="courses.html" method="get" class="search-form">
+        <form action="search.html" method="get" class="search-form">
             <input type="text" name="search_box" required placeholder="search courses...">
             <button type="submit" class="fas fa-search"></button>
         </form>
@@ -86,26 +86,19 @@
                 <!-- Progress Overview -->
                 <div class="progress-overview">
                     <div class="progress-metric">
-                        <p class="likes">active courses <span id="active-courses-count" >0</span></p>
-                    </div>
-                    
-                    <div class="progress-metric">
-                        <p class="likes">completion rate <span>0%</span></p>
-                        <div class="progress-track thin">
-                            <div class="progress-bar" style="width: 0%"></div>
-                        </div>
+                        <p class="likes">Enrolled Courses <span class="active-courses-count" >0</span></p>
                     </div>
                 </div>
             
                 <!-- Current Courses -->
                 <div class="current-courses">
-                    <h3>in progress</h3>
+                    <h3>In Progress</h3>
                     
                 </div>
             
                 <!-- Completed Courses -->
                 <div class="completed-courses">
-                    <h4>completed</h4>
+                    <h3>Completed</h3>
                     <ul class="course-list">
                         
                     </ul>
@@ -155,6 +148,9 @@
     <script src="js/auth_handler.js"></script>
     <script src="js/enrollment.js"></script>
     <script src="js/playlist.js"></script>
+    <script src="js/watch-video.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/search.js"></script>
 
     
     </body>

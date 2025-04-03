@@ -37,7 +37,7 @@
 }
 
 .delete-btn,
-.inline-delete-btn, .delete-comment-btn, .save-edit-btn{
+.inline-delete-btn, .save-edit-btn{
     background-color: $red;
 }
 
@@ -64,14 +64,17 @@
     background-color: $red;
 }
 
-.unenroll-btn, .delete-comment-btn, 
+.delete-comment-btn, 
 .cancel-edit-btn{
+    background: $wine;
+}
+
+.unenroll-btn{
     background: $wine;
 }
 
 .enroll-btn, .unenroll-btn {
     padding: 1rem 1.5rem;
-    background: $red;
     color: $white;
     font-size: 1.8rem;
     text-transform: capitalize;
