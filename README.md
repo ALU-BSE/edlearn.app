@@ -102,6 +102,7 @@ The backend of the EDLEARN platform utilizes a combination of a local JSON Serve
 This hybrid approach allows for simulating a more complete backend with dedicated logic for user authentication while still leveraging the simplicity of JSON Server for other data management.
 
 **To run the backend:**
+Ensure you Navigate to the directory where the db.json file is located before running any of the commands below
 
 1.  **Start the JSON Server:** `json-server --watch db.json --port 3000` (Ensure no other application is using port 3000)
 2.  **Start the Node.js server:** `node server.js` (Ensure you have Node.js installed)
@@ -109,18 +110,6 @@ This hybrid approach allows for simulating a more complete backend with dedicate
 The client-side application will then communicate with both the JSON Server (for general data) and the Node.js server (for authentication) via HTTP requests.
 
 
-## Future Enhancements
-
-The following features are planned for future development:
-
-* [List potential future features, e.g., more robust video progress tracking, commenting system, user profiles, instructor roles, course enrollment functionality, improved UI/UX, etc.]
-
 ## Known Issues and Limitations
 
 * Video progress tracking might have some inconsistencies or edge cases that need further refinement.
-* User enrollment is currently managed through manual updates in `db.json`.
-* [Mention any other known issues or limitations you are aware of.]
-
-## Contact
-
-[Your Name/Contact Information]
